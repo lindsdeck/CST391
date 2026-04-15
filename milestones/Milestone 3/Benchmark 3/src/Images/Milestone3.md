@@ -84,9 +84,9 @@ Responsibilities:
 
 ## User Interface Diagram 
 
-![UI](../Images/ui1.png)
-![UI](../Images/ui2.png)
-![UI](../Images/ui3.png)
+![UI](../Images/UI1.png)
+![UI](../Images/UI2.png)
+![UI](../Images/UI3.png)
 
 ## Class Diagram 
 
