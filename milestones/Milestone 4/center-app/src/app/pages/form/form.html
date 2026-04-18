@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-header">
+    <h3>{{ isEdit ? 'Edit Center' : 'Add Center' }}</h3>
+  </div>
+
+  <div class="card-body">
+    <form (ngSubmit)="save()">
+
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input class="form-control" [(ngModel)]="center.name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" [(ngModel)]="center.description" name="description"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Rating</label>
+        <input type="number" class="form-control" [(ngModel)]="center.rating" name="rating">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Openings</label>
+        <input type="number" class="form-control" [(ngModel)]="center.openings" name="openings">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Price per Week</label>
+        <input type="number" class="form-control" [(ngModel)]="center.price_per_week" name="price_per_week">
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        {{ isEdit ? 'Update' : 'Create' }}
+      </button>
+
+      <a routerLink="/centers" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+  </div>
+</div>

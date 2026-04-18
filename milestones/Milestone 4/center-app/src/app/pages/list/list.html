@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Center List</h2>
+  <p>Center count: {{ centers.length }}</p>
+  <a routerLink="/centers/new" class="btn btn-success">Add Center</a>
+</div>
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+  {{ errorMessage }}
+</div>
+
+<div *ngIf="centers.length > 0; else noCenters" class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-light">
+      <tr>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Openings</th>
+        <th>Price / Week</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let center of centers">
+        <td>{{ center.name }}</td>
+        <td>{{ center.rating }}</td>
+        <td>{{ center.openings }}</td>
+        <td>${{ center.price_per_week }}</td>
+        <td>
+          <a [routerLink]="['/centers', center.id]" class="btn btn-sm btn-primary me-2">View</a>
+          <a [routerLink]="['/centers', center.id, 'edit']" class="btn btn-sm btn-warning me-2">Edit</a>
+          <button class="btn btn-sm btn-danger" (click)="deleteCenter(center.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noCenters>
+  <div class="alert alert-info">
+    No centers found.
+  </div>
+</ng-template>
