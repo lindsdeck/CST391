@@ -1,0 +1,10 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class MusicService {
+  constructor(private http: HttpClient) {}
+  private host = 'http://localhost:5000';
+}
