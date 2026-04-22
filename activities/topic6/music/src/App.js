@@ -1,0 +1,51 @@
+import React, { useState } from 'react';
+import Card from './Card';
+import './app.css';
+
+const App = () => {
+  const [albums, setAlbums] = useState([
+    {
+      id: 1,
+      title: "Tickets to My Downfall",
+      artist: "Machine Gun Kelly",
+      description:
+        "Tickets to My Downfall (2020) marks Machine Gun Kelly’s shift from rap to pop-punk, featuring a guitar-driven sound and collaborations with Travis Barker.",
+      image:
+        "https://upload.wikimedia.org/wikipedia/en/b/bb/Machine_Gun_Kelly_-_Tickets_to_My_Downfall.png"
+    },
+    {
+      id: 2,
+      title: "Lost Americana",
+      artist: "Machine Gun Kelly",
+      description:
+        "Lost Americana is an upcoming project by Machine Gun Kelly, expected to explore themes of American culture and personal storytelling with a blend of genres.",
+      image:
+        "https://upload.wikimedia.org/wikipedia/en/5/52/Lost_Americana_album_cover.jpg"  
+    },
+    {
+      id: 3,
+      title: "Mainstream Sellout",
+      artist: "Machine Gun Kelly",
+      description:
+        "Mainstream Sellout (2022) continues MGK’s pop-punk style, featuring energetic tracks and collaborations, building on the success of his previous album.",
+      image:
+        "https://upload.wikimedia.org/wikipedia/en/b/b7/Machine_Gun_Kelly_-_Mainstream_Sellout.png"
+    }
+  ]);
+
+  return (
+    <div className="container">
+      {albums.map((album) => (
+        <Card
+          key={album.id}
+          albumTitle={album.title}
+          albumDescription={album.description}
+          imgURL={album.image}
+          buttonText="OK"
+        />
+      ))}
+    </div>
+  );
+};
+
+export default App;
