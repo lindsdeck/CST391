@@ -8,26 +8,26 @@
 
 ## Screenshots
 
-- ### React Application Running
-#### I have successfully created a React web applicaiton that is using Bootstrap and HTML to display cards of an artist's albums with the cover photo, details and a button.
-![React Application](./app.png)
+- ### Search Console
+#### This screenshot shows that the React front end is successfully capturing the user input. The console confirms that the value entered into the search box is being recognized and stored as the search phrase.
+![Search Console](./searchConsole.png)
 
 
-- ### index.js file
-#### index.js is the entry point of the application. It will import the app component and render it into the HTML page. 
-![Index.js](./indexJS.png)
+- ### Search Result
+#### This is the search functionality working correctly. The applicaiton filters and dsiplays the appropriate albums based on the user's input.  
+![Search Result](./searchresults.png)
 
-- ### App.js file
-#### app.js defined the user interface. It organizes and siaplys the card components passing the data to them through props.
-![App.js](./appJS.png)
+- ### Backend MySQL displaying
+#### Below shows that the application is successfully connected to the backend API created in Activity 1. The data stored in the MySQL database is being retrieved and displayed correctly in the front end.
+![API](./APIloading.png)
 
-- ### Card.js
-#### card.js defines the resuable album card. It receives the data through prop for all aspects of the ablum and then created the card using Bootstrap.  
-![Card.js](./card.png)
+- ### Search Functioning with Backend
+#### The search functionality is working with data retrieved form the backend API. The application correctly filters and displays results based on user input using live database data.
+![Search with API](./Searchfunction.png)
 
 
 ## Summary of new features
-This project is my first use of React.  I used functional components to make it modular and organized. I used JSX and JavaScript to make a easy and nice UI design. Props is also new and was used to pass data between componenets. This allowed me to create the resuable Card component. I also added Bootstrap for the style, learning how to incorporate a CSS framework with React.
+In this activity, I integrated a RESTful API and implemented data handing using React. The application now retrieves album data from an Express backend connected to a MySQL database using axios. I also implemented a SearchForm component that captures user input and updates the displayed album list through state management. Key concepts that were introduced include: async/await, API communication, React State and React Prop. These allow the applicaiton to load, display and filter the data.
 
 # Mini App #1 - State Changer Demo
 
