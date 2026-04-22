@@ -14,7 +14,7 @@
 
 - ### React Application Running
 #### I have successfully created a React web applicaiton that is using Bootstrap and HTML to display cards of an artist's albums with the cover photo, details and a button.
-![React Application](./App.png)
+![React Application](./app.png)
 
 
 - ### index.js file
