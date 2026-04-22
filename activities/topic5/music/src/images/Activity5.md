@@ -12,40 +12,40 @@
 
 ## Screenshots
 
-- ### Main Application Screen
-#### Below you see the main loading page of the Music application. It inclued the applicaiton title and the navigation menu. The navigation menu allows users to view and create a new album/artist and to navigate to the GCU home page. 
-![main page](./MainApp.png)
+- ### React Application Running
+#### I have successfully created a React web applicaiton that is using Bootstrap and HTML to display cards of an artist's albums with the cover photo, details and a button.
+![React Application](./App.png)
 
 
-- ### Artist List Screen
-#### Below you will see the lists of artist that the UI was able to pull from the backend API upon selecting artist list from the navigation bar.  Angular uses HTTPClient to erequest the data. Each artist is able to be clicked on to see their album list. 
-![Artist list](./artistlist.png)
+- ### index.js file
+#### index.js is the entry point of the application. It will import the app component and render it into the HTML page. 
+![Index.js](./indexJS.png)
 
-- ### Album List
-#### We now see the albums of the artist that waws selected. Again the applicaiton pulls the data from the backend API using Angular HTTP.  Users are again able to select an album to get more details of the album. 
-![Album List](./albumlist.png)
+- ### App.js file
+#### app.js defined the user interface. It organizes and siaplys the card components passing the data to them through props.
+![App.js](./appJS.png)
 
-- ### Album Display with Tracks
-#### Below we see the details of the album now including year, descriptiona dn tracks.  We also have a clickable link that will take us to a vidoe of the song. 
-![Album display](./albumdisplay.png)
-
-- ### Add Album
-#### This is the form the user can interact wtih to add a new album.  The user will enter all the details within the form and submit it.  Next we can see that the submission of the new artist, Justin Bieber, was successful as he was not on the list above. 
-![Add Album](./add.png)
-![Successful Album Add](./add2.png)
+- ### Card.js
+#### card.js defines the resuable album card. It receives the data through prop for all aspects of the ablum and then created the card using Bootstrap.  
+![Card.js](./card.png)
 
 
-## Research Questions
-Research how an Angular application maintains a logged in state. How does it communicate this state to the server?
-- Angular maintains a logged in state by storing a form of authentication information on the client after the user has signed in.  This is most commonly session cookie managed by the browser or a token stored by the application. Broswer storage such as localStorage can preserve data across browser sessions while the server issued cookies are also commonly used to remember authenticated users. To communicate the logged in state to the server, the application usualy send either an authentication cookue wuth thge request or an authorization header through HTTP.  Overall, Angular maintains login state by keeping authentication data avaliable and communcated that state to the server by attaching cookies or auth headers on each request so that the server can verify the user before returing protected data.
+## Summary of new features
+This project is my first use of React.  I used functional components to make it modular and organized. I used JSX and JavaScript to make a easy and nice UI design. Props is also new and was used to pass data between componenets. This allowed me to create the resuable Card component. I also added Bootstrap for the style, learning how to incorporate a CSS framework with React.
+
+# Mini App #1 - State Changer Demo
+
+## Screenshots
+
 
 ## Discussion Questions
-1. Research the Vue.js framework. PRovide one to tow advantages and one to two disadvantages of using it. Justify your rationale with reliable and valid information. 
-    - Vue.js is a JavaScript framework for creating interactive and dynamic UIs and is similar to React. One advantage of Vue.js is that it is easy to learn and manage, which makes it a great option for not only experienced developers, but also beginners. It has simple syntax and clear documentation making it easier for developers to understand it. Another advantage is that it has a large and active community behind it. You will have support, resources and a large ecosystem of libraries and plug ins. This makes it a great option as it opens the door for you to be able to do many different things with it and have the support that you might need along the way.
-    - One disadvantage of Vue.js is that it is similar to React, but has a smaller library, tools and resources compared to that and Angular. So while it is a good option, React and Angular might be a better option for their larger ecosystems. I also found that it is rapidly evolving. This can be a positive in some ways, but can also lead to inconsistencies, instability or the breaking of changes in early version of the framework. Overall, Vue.js is a good JavaScript option with its simplicity, flexibility and performance. It will give you the tools that you need to make a reactive web app.
-2. Think about the factors one should consider when selecting a cloud provider. Identify two to three and justify rationale.
+1. Research what a Javascript framework is and how does it differ from programming in standard Javascript. Explain the motivations for learning a Javascript framework.
+    - A JavaScript framework is a pre-built structure that developers use to build web applications more efficiently instead of having to write everything from scratch. When you are working with standard JavaScript, you have full control which can be nice, but you also have to handle things like organizing the code, managing the UI, and handling user interactions all on your own. Frameworks come with the built in tools, patterns and rules that guide how you write your code, which can make development faster and more consistent. They are also nice because you can use them as a foundation and then customize it and change what you need to to make it your own and what you want. The biggest reason to learn a JavaScript framework is that it simplifies tasks, makes project building faster and they are widely used, so it can be a helpful thing to be able to add to your list when looking for jobs and marketing yourself.
 
-    - When selecting a cloud provider, some important factors are considering the security, cost and scalability.  Security is important because cloud enviornments often store sensitive data, so providers must offer strong encryption, access control and complaince with standars such as HIPPA to protect against breacher. Cost is another key factor since lcoud services can become expensive as usage grows. Understanding each providers pricing model can help avoid unexpected expenses and ensure the solution fits within the budget.  Scalability is essential because it allows applications to grow or shrtink based on demand, ensuring consistent performance without overpaying for unused resources. Considering these factors helps enmsure the selected clloud provider meets both current needs and future growth requirements. 
+2. Research three popular Javascript frameworks. Give examples of which companies or well-known applications are using them. What is the growth projection for each company and/or application? Gather data about frameworks from job postings on indeed.com or other online job boards. What can you deduce from your research?
+
+    - Three of the most popular Javascript frameworks are React, Angular and Vue.js and each one is seen in the current job market. React was created by Meta and is the most popular with companies like Facebook and Netflix. It appears the most in job postings. It is component based structure and large ecosystem is part 9of what makes it so popular.  Angular is maintained by Google and is common in enterprise-level applications like Microsoft and large financial instituitions. It might not be as popular, but still is used commonly and is liked because of its stability and suitability for large scale systems. Vue.js is used by Gitlab and Alibaba is nice because it is simle and easy to use and learn.  This is making it popular for start ups and smaller teams. 
+    - Based on what I have found for job trends, React offers the strongest employment opportunities, Angular is valuable in enterprise enviornments and Vue is flexible and growing.  Overall, learning React would provide the most immediate job opportunities, but knowing all three will help make me a more valuable candidate overall as it would not hold me back from other opportunities. 
 
 ### Resources
 - https://www.ifourtechnolab.com/blog/angular-login-with-session-authentication
