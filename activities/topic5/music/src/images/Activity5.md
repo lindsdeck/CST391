@@ -35,6 +35,9 @@ This project is my first use of React.  I used functional components to make it 
 
 # Mini App #1 - State Changer Demo
 
+## Git link to Mini App Code
+- https://github.com/lindsdeck/CST391/tree/main/activities/topic5/statechanger
+
 ## Screenshots
 
 - ### Mini App Home Page
@@ -52,6 +55,18 @@ This project is my first use of React.  I used functional components to make it 
 - ### All counters funtion 
 #### The final image shows all three counter componenets working correctly.  Each counter maintained its own state, and both the click counter and message update features funtion across all cards. 
 ![All counters updated](./allcounters.png)
+
+## Part 2
+
+## Screenshots
+
+- ### Final React Album Cards
+#### This is the final layout of the music application after adding CSS styling to display the cards horizontally with some space between them.  This shows how React and CSS work together to create a positive UI for the user experience.
+![Album Cards](./final.png)
+
+## Summary of new features
+In this part, I was able to use new React features. I used state to store data inside a component.  I used props to pass from a parent component to a child component which allowed the Card and Counter components to display different values. The map() function was used to loop through the array of album data to create the card componenets. CSS flexbox was used to display the cards horizontally on the page.  
+
 
 ## Discussion Questions
 1. Research what a Javascript framework is and how does it differ from programming in standard Javascript. Explain the motivations for learning a Javascript framework.
