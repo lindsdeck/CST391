@@ -18,6 +18,6 @@ export class App {
   }
 
   displayArtistList() {
-    this.router.navigate(['list-artists'], { queryParams: { data: new Date() } });
+    this.router.navigate(['list-artists']);
   }
 }

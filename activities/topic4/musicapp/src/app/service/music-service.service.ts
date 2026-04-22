@@ -25,14 +25,20 @@ export class MusicServiceService {
       });
   }
 
-  public getAlbumsOfArtist(artistName: string, callback: (albums: Album[]) => void): void {
-    const request = this.host + '/albums/' + artistName;
+public getAlbumsOfArtist(artistName: string, callback: (albums: Album[]) => void): void {
+  const request = this.host + '/albums/' + encodeURIComponent(artistName);
+  console.log('request', request);
 
-    this.http.get<Album[]>(request)
-      .subscribe((albums: Album[]) => {
-        callback(albums);
-      });
-  }
+  this.http.get<Album[]>(request).subscribe({
+    next: (albums: Album[]) => {
+      console.log('have albums', albums);
+      callback(albums);
+    },
+    error: (error) => {
+      console.error('Error loading albums:', error);
+    }
+  });
+}
 
   public createAlbum(album: Album, callback: () => void): void {
     this.http.post<Album>(this.host + '/albums', album)

@@ -36,40 +36,11 @@ In this Activity I integrated the music application I had created with the back 
     - using both [] and {} makes this 2 way binding between the TypeScript and HTML.  This keeps the view and model in sync and updates the components when the input changes. It was used for the quantity and selectedProduct within our application.  This allowed the user to change their selections and have it update within the form and in the submission data. 
 
 
-## Activity 3 Part 2
-I built a full Angular music application.  It is structed with models, service and components. The core of the app is MusicServiceService which manages a lit of albums loaded from a JSON file.  Methods have been created for getting artists, getting albums by artist, creating, updating and deleting albums. I built complonents for listing artists and albums, displaying individual albums and creating a new album all with Angular's routing system. I also used dependency injection, data binding and componenet communication. 
 
-## Screenshots
-
-- ### Bootstrap NavBar
-#### A bootstrap nav bar has been added wtih 4 options for the user that we see in additiona to the Welcome message.  The navbar is responsive and will collapse and expand with the hamburger menu.
-![Navbar view](./A.png)
-
-- ### Home Page
-#### Below you can see the home page of the MusicApop Angular application. We see Welcome and the dark bootstrap NavBar with lkinks for Music, GCU home, Create, Artists and About
-![Home](./B.png)
-
-- ### GCU Homepage Redirect
-#### Below you can see where I am directed when I select GCU from the NavBar. It shows that the navabr can host an external navigation link and work correctly within Angular.
-![GCU](./C.png)
-
-- ### Create Album Page
-#### Below you can see what the user will see when they go to create an album. I have input information for an album to show this information ebing saved correclty. It asks for all the correct information within the form. 
-![Create Album](./D.png)
-
-
-- ### Artist List page showing added album/artist
-#### Below we see that the album for Taylor Swift was added as she is listed under the artists with albums correctly.  This shows that the Music Service is working correctly adding new albums. 
-![Artist List](./E.png)
-
-- ### About Box
-#### Below is the about box. This is an alert box that ppears and shows the vurrent version of the application. 
-![About Box](./F.png)
 
 ## Research Questions
-Add complete comments to music-service.ts. Include this commented code in a document. Make sure your submission read like a code file.  Below is the link to the file that has been updated with appropriate commenting.
-
-https://github.com/lindsdeck/musicapp/blob/master/src/app/service/music-service.service.ts
+Research how an Angular application maintains a logged in state. How does it communicate this state to the server?
+- fjdksal;jfkl djsa
 
 
 ## Discussion Questions
