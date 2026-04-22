@@ -6,7 +6,7 @@
 In this Activity I integrated the music application I had created with the back end services from Topic 1. For front end I used Angular. I configured the Angular app to use HTTP to replace hard coded data with live data from the backend API.  I updated music service to make API calls for retrieving artista and albums as well as creating them. The applicaiton was tested a lot and had issues throughout production with pulling the information correctly.  Through problem solving, the applicaiton is running as expected.  
 
 ## Link to backend code
-- https://github.com/lindsdeck/CST391/tree/main/activities/topic4/musicapp
+- https://github.com/lindsdeck/CST391/tree/main/activities/topic1
 
 ## Screenshots
 
