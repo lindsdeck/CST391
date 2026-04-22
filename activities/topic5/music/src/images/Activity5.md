@@ -37,6 +37,21 @@ This project is my first use of React.  I used functional components to make it 
 
 ## Screenshots
 
+- ### Mini App Home Page
+#### The three counter cards are displayed as expected. Each card includes a text input box and a button that allows the user to type a message and click to update the counter.
+![Mini](./mini.png)
+
+- ### Click Counter Update
+#### When clicking on the 'click me' button, the application icreases the click count by 1.  This demonstrates a state change in React, where the updated value is immediately reflected on the screen. 
+![Click Counter Update](./clickupdate.png)
+
+- ### Message Update
+#### The message update feature also works correctly. As the user types into the input box, the message updates instantly wihtout needing to click a button. This shows how React updates state in real time based on user input.  
+![Message Update](./message.png)
+
+- ### All counters funtion 
+#### The final image shows all three counter componenets working correctly.  Each counter maintained its own state, and both the click counter and message update features funtion across all cards. 
+![All counters updated](./allcounters.png)
 
 ## Discussion Questions
 1. Research what a Javascript framework is and how does it differ from programming in standard Javascript. Explain the motivations for learning a Javascript framework.
