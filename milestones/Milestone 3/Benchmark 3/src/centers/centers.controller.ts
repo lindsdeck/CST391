@@ -47,7 +47,11 @@ export const deleteCenter = async (req: Request, res: Response) => {
   try {
     const id = Number(req.params.id);
     const result = await dao.deleteCenter(id);
-    res.json(result);
+
+    res.status(200).json({
+      message: "Center deleted successfully",
+      result: result
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Something went wrong" });
